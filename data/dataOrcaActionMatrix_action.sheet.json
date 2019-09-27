@@ -1,29 +1,29 @@
-[
-  {
+{
+  "fund": {
     "name": "Stephanie Solien",
     "bio": "Co-chair, Orca Task Force; leadership council vice chair, Puget Sound Partnership",
     "action-short": "Need ongoing funding for environmental protection and restoration",
     "action-long": "\"We need more immediacy around the funding and protection of habitat, especially with the rapid growth in the region and the threats we have already seen and are experiencing with climage change.\" Better understanding is also needed that this place — the surrounding beaches and shorelines of Puget Sound and rivers and forests are really important not only to nature, but to our own quality of life.",
     "x": 10,
-    "personal-action": "Put solar panels on house. Replacing gas-powered vehicles with electric and reducing number of vehicles. Maintains septic system in good order, and follows Whale Wise guidelines on the water. "
+    "personal-action": "Put solar panels on house. Replacing gas-powered vehicles with electric and reducing number of vehicles. Maintains septic system in good order, and follows Whale Wise guidelines on the water. ",
+    "name2": "Les Purce",
+    "bio2": "Co-chair, Orca Task Force; former president, Evergreen State College ",
+    "action-long2": "\"We need a continuing revenue source that is tied the way we live for the sake of the future of our children, and the overall health of Mother Earth.\" Restoration is expensive and funding can't be subject to the whims of politics. Funding is needed for ongoing pollution cleanup and habitat restoration.",
+    "personal-action2": "Has become much more conscious of his lifestyle and its effect on the environment; drives a hybrid; reduces his driving and energy use. "
   },
-  {
-    "name": "Les Purce",
-    "bio": "Co-chair, Orca Task Force; former president, Evergreen State College ",
-    "action-short": "Need ongoing funding source for environmental protection and restoration",
-    "action-long": "\"We need a continuing revenue source that is tied the way we live for the sake of the future of our children, and the overall health of Mother Earth.\" Restoration is expensive and funding can't be subject to the whims of politics. Funding is needed for ongoing pollution cleanup and habitat restoration.",
-    "x": 10,
-    "personal-action": "Has become much more conscious of his lifestyle and its effect on the environment; drives a hybrid; reduces his driving and energy use. "
-  },
-  {
+  "fishing": {
     "name": "Ralph Munro",
     "bio": "Five-term Washington secretary of state. Helped shut down orca hunting for aquariums in Washington waters. ",
     "action-short": "Stop fishing",
     "action-long": "Enact a moratorium on chinook salmon fishing to allow runs a chance to rebuild for the sake of the whales. Change the ethic, as in trophy hunting, of showing off a big catch. \"Times have changed.\"",
     "x": 10,
-    "personal-action": "Has stopped chinook fishing."
+    "personal-action": "Has stopped chinook fishing.",
+    "name2": "Bill Ruckelshaus",
+    "bio2": "Two-time head of Environmental Protection Agency. Deputy U.S. attorney general ",
+    "action-long2": "\"Unless we enact a moratorium on catching the fish, we are never going to succeed.\"",
+    "personal-action2": "Stopped fishing for salmon."
   },
-  {
+  "no": {
     "name": "Dan Evans ",
     "bio": "Three-term Washington governor. U.S. senator. Helped end orca capture in Washington waters.",
     "action-short": "No clear solution",
@@ -31,7 +31,7 @@
     "x": 1,
     "personal-action": "No changes "
   },
-  {
+  "tax": {
     "name": "Fawn Sharp",
     "bio": "President, Quinault Indian Nation",
     "action-short": "Tax carbon",
@@ -39,23 +39,19 @@
     "x": 10,
     "personal-action": "Renewed her connection to the Salish Sea by paddling on the Canoe Journey. "
   },
-  {
+  "habitat": {
     "name": "Fawn Sharp",
     "bio": "President, Quinault Indian Nation",
     "action-short": "Protect and restore salmon habitat",
     "action-long": "Clean up pollution in Puget Sound. \"Where is the political leadership? We can either work against adversity with weakness and doubt or with strength and confidence.\"",
     "x": 10,
-    "personal-action": "Renewed her connection to the Salish Sea by paddling on the Canoe Journey. "
+    "personal-action": "Renewed her connection to the Salish Sea by paddling on the Canoe Journey. ",
+    "name2": "Tim Ragen",
+    "bio2": "Former scientific program director and executive director, national Marine Mammal Commission",
+    "action-long2": "\"Lack of prey and sound and contaminants all interact and they influence one another.\"",
+    "personal-action2": "Decided with his wife not to have children and is a vegetarian, to reduce impact on the environment. Limits driving to 4,000 miles or less a year; walks and bicycles. Whale watches only from shore. "
   },
-  {
-    "name": "Bill Ruckelshaus",
-    "bio": "Two-time head of Environmental Protection Agency. Deputy U.S. attorney general ",
-    "action-short": "Stop fishing",
-    "action-long": "\"Unless we enact a moratorium on catching the fish, we are never going to succeed.\"",
-    "x": 1,
-    "personal-action": "Stopped fishing for salmon."
-  },
-  {
+  "recovery": {
     "name": "Bill Ruckelshaus",
     "bio": "Two-time head of Environmental Protection Agency. Deputy U.S. attorney general ",
     "action-short": "Adequately fund salmon recovery",
@@ -63,7 +59,7 @@
     "x": 10,
     "personal-action": "I have stopped fishing for salmon"
   },
-  {
+  "landuse": {
     "name": "Jeff Davis",
     "bio": "Director of conservation, Washington Department of Fish and Wildlife",
     "action-short": "Change land-use laws to require net ecological gain rather than no net loss",
@@ -71,7 +67,7 @@
     "x": 10,
     "personal-action": "Planted native trees, shrubs and flowers and pollinator meadow at home, shrinking the lawn. Reducing energy use and carbon footprint. Shopping and eating local."
   },
-  {
+  "personal": {
     "name": "Erich Hoyt",
     "bio": "Author of \"The Whale Called Killer\"",
     "action-short": "Take personal responsibility for the places you live and go",
@@ -79,36 +75,24 @@
     "x": 1,
     "personal-action": "Deeply researched the fate of every orca taken in the capture era, published in his book about the southern residents and their struggle to survive. Avoids use of plastics and plastic bags, eats low on the food chain, recycles. "
   },
-  {
+  "noise": {
     "name": "Peter Goldmark",
     "bio": "Two-term Washington Commissioner of Public Lands",
     "action-short": "Reduce underwater noise",
     "action-long": "\"I am aghast there is any kind of whale viewing activity on the water because of the inevitable impact through noise.\"",
     "x": 10,
-    "personal-action": "Cut down on personal use of fossil fuels through his choice of vehicles, use of public transit, including walking. "
+    "personal-action": "Cut down on personal use of fossil fuels through his choice of vehicles, use of public transit, including walking. ",
+    "name2": "Tim Ragen",
+    "bio2": "Former scientific program director and executive director, national Marine Mammal Commission",
+    "action-long2": "Underwater noise must be limited to avoid reducing the effective habitat of killer whales that use sound to hunt. The whales are expending more energy to hunt, and getting less nourishment, which has them on a trajectory of decline. ",
+    "personal-action2": "Decided with his wife not to have children and is a vegetarian, to reduce impact on the environment. Limits driving to 4,000 miles or less a year; walks and bicycles. Whale watches only from shore. "
   },
-  {
+  "pollution": {
     "name": "Peter Goldmark",
     "bio": "Two-term Washington Commissioner of Public Lands",
     "action-short": "Reduce pollution in Puget Sound",
     "action-long": "Enforce existing laws. Hold public officials accountable.",
     "x": 10,
     "personal-action": "Cut down on personal use of fossil fuels through his choice of vehicles, use of public transit, including walking. "
-  },
-  {
-    "name": "Tim Ragen",
-    "bio": "Former scientific program director and executive director, national Marine Mammal Commission",
-    "action-short": "Restore salmon habitat",
-    "action-long": "\"Lack of prey and sound and contaminants all interact and they influence one another.\"",
-    "x": 10,
-    "personal-action": "Decided with his wife not to have children and is a vegetarian, to reduce impact on the environment. Limits driving to 4,000 miles or less a year; walks and bicycles. Whale watches only from shore. "
-  },
-  {
-    "name": "Tim Ragen",
-    "bio": "Former scientific program director and executive director, national Marine Mammal Commission",
-    "action-short": "Reduce underwater noise",
-    "action-long": "Underwater noise must be limited to avoid reducing the effective habitat of killer whales that use sound to hunt. The whales are expending more energy to hunt, and getting less nourishment, which has them on a trajectory of decline. ",
-    "x": 10,
-    "personal-action": "Decided with his wife not to have children and is a vegetarian, to reduce impact on the environment. Limits driving to 4,000 miles or less a year; walks and bicycles. Whale watches only from shore. "
   }
-]
+}
