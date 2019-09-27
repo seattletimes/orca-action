@@ -1,0 +1,229 @@
+@import "seattletimes";
+@import "flexbox";
+
+body {
+  font-family: @df-sans;
+  max-width: 960px;
+}
+
+h1, h2 {
+  margin: 0;
+}
+h1 {
+  font-family: @df-sans;
+  color: #8d2a17;
+  text-transform: uppercase;
+  font-weight: bolder;
+
+  @media @tablet {
+    font-size: 22px;
+  }
+}
+h2 {
+  font-size: 18px;
+  color: #8d2a17;
+  text-decoration: underline;
+
+  @media @tablet {
+      font-size: 14px;
+    }
+}
+
+p {
+  font-weight: bold;
+  line-height: 1.2;
+  padding-bottom: 2px;
+}
+
+a {
+  color: lighten(#28575d, 20%);
+  font-weight: bold;
+}
+
+.fa {
+  padding: 0 2px;
+  color: #8d2a17;
+}
+
+.note {
+  font-style: italic;
+  font-size: 14px;
+  color: black;
+  font-weight: normal;
+  vertical-align: text-bottom;
+  margin-top: 2px;
+}
+
+.outer {
+  padding: 20px 0;
+  margin: 20px 0;
+}
+.inner {
+  display: block;
+  position: relative;
+  padding-top: 67%;
+  z-index: -1;
+
+  @media @tablet {
+    padding-top: 133%;
+  }
+}
+
+.info {
+  .flex(0 0 340px);
+  font-size: 17px;
+  margin-top: 8px;
+  margin-left: 10px;
+  z-index: 5;
+  position: absolute;
+  max-width: 300px;
+
+  @media @tablet {
+    max-width: 200px;
+  }
+
+  @media @mobile {
+    max-width: none;
+    position: relative;
+    padding-bottom: 5px;
+  }
+
+  .title {
+    font-weight: bolder;
+    font-size: 22px;
+    color: darken(#DD492D, 20%);
+    text-transform: uppercase;
+
+    @media @mobile {
+      font-size: 18px;
+    }
+  }
+  .text {
+    font-size: 16px;
+  font-weight: bold;
+
+  @media @mobile {
+      font-size: 13px;
+    }
+  }
+}
+
+.image {
+  .flex(1);
+  position: relative;
+
+  .background, .overlay {
+    position: absolute;
+    width: 100%;
+
+    @media @tablet {
+      display: none !important;
+    }
+  }
+}
+
+.overlay-web {
+  height: 0;
+  padding-bottom: percentage(642.079 / 960);
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media @tablet {
+      display: none !important;
+    }
+}
+
+.image-mobile {
+  .flex(1);
+    position: absolute;
+    display: none;
+
+  .background, .overlay {
+    position: absolute;
+    width: 100%;
+  }
+   @media @tablet {
+      display: inline !important;
+    }
+}
+
+.overlay-mobile {
+  height: 0;
+  display: none;
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media @tablet {
+      display: inline !important;
+    }
+}
+
+.st-group:hover, .st-group.selected {
+  .st-circle {
+    fill: darken(#DD492D, 20%);
+  }
+  .st-plus {
+    fill: darken(#F6CDBA, 20%);
+  }
+  .st-overlay {
+    opacity: 0.5;
+  }
+}
+
+.st-overlay {
+  fill: #000000;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.buttons{
+  .display-flex();
+  max-width: 160px;
+
+  @media @mobile {
+    max-width: 100%;
+  }
+}
+.goto {
+  .flex(1);
+  text-align: center;
+  width:auto;
+  padding: 4px 0px;
+  // border: 2px solid white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 10px;
+  &.disabled {
+    color: @df-dark-gray;
+  }
+}
+.goto:not(.disabled):hover {
+  background-color: black;
+  color: white;
+}
+
+.clear {
+  clear:both;
+  display: block;
+}
+
+.credits {
+  font-size: 11px;
+  color: @df-middle-gray;
+  text-align: right;
+  vertical-align: text-bottom;
+  padding-right: 10px;
+}

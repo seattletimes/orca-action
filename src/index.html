@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%= json.project.title %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <%= t.include("partials/_head.html") %>
+  </head>
+  <body>
+
+    <responsive-child>
+      <div class="outer">
+
+          <div class="info">
+            <div class="details">
+              <h1>Echolocation</h1>
+              <p>Toothed whales, including orcas, and most bats have the ability to locate and identify objects through echoes, which are reflected sound. For killer whales, echolocation is crucial for hunting salmon.</p>
+              <h2>How echolocation works</h2>
+              <p class="note"><i>Click on any number or arrow to begin</i></p>
+            </div>
+            <div class="buttons">
+              <div class="goto back disabled"><i class="fa fa-chevron-left"></i> Previous</div>
+              <div class="goto next">Next <i class="fa fa-chevron-right"></i></div>
+            </div>
+          </div>
+
+          <div class="image">
+              <img class="background" src="./assets/echolocation-bkgd.jpg">
+            <div class="overlay"><%= t.include("assets/echolocation.svg") %></div>
+          </div>
+          <div class="image-mobile">
+              <img class="background2" src="./assets/echolocation-bkgd-M.jpg">
+            <div class="overlay-mobile"><%= t.include("assets/echolocation-M.svg") %></div>
+          </div>
+
+        <div class="inner">
+          <div class="credits"><i>Sources: Marla Holt, National Oceanic and Atmospheric Administration, Northwest Fisheries Science Center</i><br>EMILY M. ENG / THE SEATTLE TIMES</div>
+        </div>
+      </div>
+    </responsive-child>
+
+    <script src="app.js" async></script>
+    <script>
+      var data = <%= JSON.stringify(json.echolocation_Sheet1) %>;
+    </script>
+    <% if (json.project.production) { %>
+    <%= !json.project.embedded ? t.include("partials/_foot.html") : "" %>
+    <%= t.include("partials/_workHere.html") %>
+    <% } %>
+  </body>
+</html>
