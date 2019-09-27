@@ -72,11 +72,6 @@ a {
 .info {
   .flex(0 0 340px);
   font-size: 17px;
-  margin-top: 8px;
-  margin-left: 10px;
-  z-index: 5;
-  position: absolute;
-  max-width: 300px;
 
   @media @tablet {
     max-width: 200px;
@@ -110,6 +105,8 @@ a {
 
 .image {
   .flex(1);
+  display: block;
+  height: 408px;
   position: relative;
 
   .background, .overlay {
@@ -170,19 +167,11 @@ a {
     }
 }
 
-.st-group:hover, .st-group.selected {
-  .st-circle {
-    fill: darken(#DD492D, 20%);
-  }
-  .st-plus {
-    fill: darken(#F6CDBA, 20%);
-  }
-  .st-overlay {
-    opacity: 0.5;
-  }
+.st0:hover, .st0.selected {
+  opacity: 0.2;
 }
 
-.st-overlay {
+.st0 {
   fill: #000000;
   opacity: 0;
   cursor: pointer;

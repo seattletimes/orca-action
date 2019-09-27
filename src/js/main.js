@@ -10,9 +10,9 @@ var template = dot.compile(require("./_info.html"));
 
 var qsa = s => Array.prototype.slice.call(document.querySelectorAll(s));
 
-qsa(".st-group").forEach(function(group) {
+qsa(".st0").forEach(function(group) {
   group.addEventListener("click", function(e) {
-    document.querySelector(".details").innerHTML = template(data[e.target.parentElement.id]);
+    document.querySelector(".details").innerHTML = template(data[e.target.id]);
     if (document.querySelector(".selected")) document.querySelector(".selected").classList.remove("selected");
     e.target.parentElement.classList.add("selected");
   });
