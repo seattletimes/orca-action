@@ -15,9 +15,8 @@
 
           <div class="info">
             <div class="details">
-              <h1>Echolocation</h1>
-              <p>Toothed whales, including orcas, and most bats have the ability to locate and identify objects through echoes, which are reflected sound. For killer whales, echolocation is crucial for hunting salmon.</p>
-              <h2>How echolocation works</h2>
+              <h1>What Can Be Done To Save Orcas?</h1>
+              <p>Intro text tk</p>
               <p class="note"><i>Click on any number or arrow to begin</i></p>
             </div>
             <div class="buttons">
@@ -36,14 +35,14 @@
           </div>
 
         <div class="inner">
-          <div class="credits"><i>Sources: Marla Holt, National Oceanic and Atmospheric Administration, Northwest Fisheries Science Center</i><br>EMILY M. ENG / THE SEATTLE TIMES</div>
+          <div class="credits"><em>Sources: Marla Holt, National Oceanic and Atmospheric Administration, Northwest Fisheries Science Center</em><br>EMILY M. ENG / THE SEATTLE TIMES</div>
         </div>
       </div>
     </responsive-child>
 
     <script src="app.js" async></script>
     <script>
-      var data = <%= JSON.stringify(json.echolocation_Sheet1) %>;
+      var data = <%= JSON.stringify(json.dataOrcaActionMatrix_action) %>;
     </script>
     <% if (json.project.production) { %>
     <%= !json.project.embedded ? t.include("partials/_foot.html") : "" %>
