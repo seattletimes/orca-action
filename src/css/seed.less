@@ -11,7 +11,6 @@ h1, h2 {
 }
 
 p {
-  font-weight: bold;
   line-height: 1.2;
   padding-bottom: 2px;
 }
@@ -67,7 +66,7 @@ a {
 }
 
 .info {
-  .flex(0 0 340px);
+  padding: 0 20px;
   font-size: 17px;
 
   @media @tablet {
@@ -80,31 +79,35 @@ a {
     padding-bottom: 5px;
   }
 
-  .title {
-    font-weight: bolder;
-    font-size: 22px;
-    color: darken(#DD492D, 20%);
+  .action-long {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .name {
+    margin-bottom: 2px;
     text-transform: uppercase;
-
-    @media @mobile {
-      font-size: 18px;
-    }
+    font-weight: bold;
+    color: @df-middle-gray;
   }
-  .text {
-    font-size: 16px;
-  font-weight: bold;
-
-  @media @mobile {
-      font-size: 13px;
-    }
+  .bio {
+    margin: 2px;
+    font-style: italic;
   }
+  .personal-action {
+    margin-top: 2px;
+  }
+}
+
+.info-inner {
+  border-top: 1px solid @df-light-gray;
 }
 
 .image {
   .flex(1);
   display: block;
-  height: 428px;
-  padding-top: 10px;
+  height: 438px;
+  padding: 10px 0;
   position: relative;
   .background, .overlay {
     position: absolute;
