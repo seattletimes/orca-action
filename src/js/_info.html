@@ -1,4 +1,12 @@
-	<p><%= data.actionLong %></p>
-	<p><%= data.name %></p>
-	<p><%= data.bio %></p>
-
+<div class="info">
+	<p class="action-long"><%= data.actionLong %></p>
+	<p class="name"><%= data.name %></p>
+	<p class="bio"><%= data.bio %></p>
+	<p class="personal-action"><%= data.personalAction %></p>
+	{{? data.name2 }}
+		<p class="action-long"><%= data.actionLong2 %></p>
+		<p class="name"><%= data.name2 %></p>
+		<p class="bio"><%= data.bio2 %></p>
+		<p class="personal-action"><%= data.personalAction2 %></p>
+	{{?}}
+</div>
