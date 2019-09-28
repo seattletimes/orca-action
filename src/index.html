@@ -12,8 +12,13 @@
 
     <responsive-child>
       <div class="outer">
+          <div class="legend display-flex">
+            <p class="legend-text" id="legend-text--individual">Individual action</p>
+            <p class="legend-text" id="legend-text--none">No action</p>
+            <p class="legend-text" id="legend-text--institutional">Institutional action</p>
+          </div>
           <div class="image">
-              <img class="background" src="./assets/orca-action.jpg">
+            <img class="background" src="./assets/orca-action.jpg">
             <div class="overlay"><%= t.include("assets/orca-action.svg") %></div>
           </div>
           <div class="image-mobile">

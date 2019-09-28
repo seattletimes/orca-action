@@ -9,25 +9,6 @@ body {
 h1, h2 {
   margin: 0;
 }
-h1 {
-  font-family: @df-sans;
-  color: #8d2a17;
-  text-transform: uppercase;
-  font-weight: bolder;
-
-  @media @tablet {
-    font-size: 22px;
-  }
-}
-h2 {
-  font-size: 18px;
-  color: #8d2a17;
-  text-decoration: underline;
-
-  @media @tablet {
-      font-size: 14px;
-    }
-}
 
 p {
   font-weight: bold;
@@ -58,6 +39,22 @@ a {
   padding: 20px 0;
   margin: 20px 0;
 }
+
+.legend {
+  position: absolute;
+  z-index: 10;
+  width: 41%;
+  max-width: 428px;
+  .legend-text {
+    font-weight: 400;
+    top: 0;
+    flex-shrink: 3;
+    flex-grow: 1;
+    text-align: center;
+    padding: 0 5px;
+  }
+}
+
 .inner {
   display: block;
   position: relative;
@@ -106,9 +103,9 @@ a {
 .image {
   .flex(1);
   display: block;
-  height: 408px;
+  height: 428px;
+  padding-top: 10px;
   position: relative;
-
   .background, .overlay {
     position: absolute;
     width: 100%;
