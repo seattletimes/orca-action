@@ -1,7 +1,7 @@
 {
   "s3": {
     "stage": {
-      "bucket": "",
+      "bucket": "projects-staging.seattletimes.com",
       "path": "jittery-voice"
     },
     "live": {
