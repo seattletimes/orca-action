@@ -12,30 +12,34 @@
 
     <responsive-child>
       <div class="outer">
-          <div class="legend display-flex">
-            <p class="legend-text" id="legend-text--individual">Individual action</p>
-            <p class="legend-text" id="legend-text--none">No action</p>
-            <p class="legend-text" id="legend-text--institutional">Institutional action</p>
-          </div>
-          <div class="image">
-            <img class="background" src="./assets/orca-action.jpg">
-            <div class="overlay"><%= t.include("assets/orca-action.svg") %></div>
-          </div>
-          <div class="image-mobile">
-              <img class="background2" src="./assets/orca-action-mobile.jpg">
-            <div class="overlay-mobile"><%= t.include("assets/orca-action-mobile.svg") %></div>
-          </div>
-          <div class="info">
-            <div class="details">
-              <p class="note"><i>Click on any circle or arrow to begin</i></p>
-            </div>
-            <div class="buttons">
+        <div class="legend display-flex">
+          <p class="legend-text" id="legend-text--individual">Individual action</p>
+          <p class="legend-text" id="legend-text--none">No action</p>
+          <p class="legend-text" id="legend-text--institutional">Institutional action</p>
+        </div>
+        <div class="image">
+          <img class="background" src="./assets/orca-action.jpg">
+          <div class="overlay"><%= t.include("assets/orca-action.svg") %></div>
+        </div>
+        <div class="image-mobile">
+            <img class="background2" src="./assets/orca-action-mobile.jpg">
+          <div class="overlay-mobile"><%= t.include("assets/orca-action-mobile.svg") %></div>
+        </div>
+        <div class="inner">
+          <div class="buttons">
               <div class="goto back disabled"><i class="fa fa-chevron-left"></i> Previous</div>
               <div class="goto next">Next <i class="fa fa-chevron-right"></i></div>
             </div>
+          <div class="info">
+            <div class="details">
+              <p class="note">Select an action above to see who suggested it. Or</p>
+              <div class="goto start">start<i class="fa fa-chevron-right"></i></div class="goto">
+            </div>
           </div>
-        <div class="inner">
-          <div class="credits"><em>Sources: Seattle Times reporting</em><br>EMILY M. ENG / THE SEATTLE TIMES</div>
+          <div class="credits">
+            <p><em>Source: Times reporting</em></p>
+            <p>EMILY M. ENG AND HILARY FUNG / THE SEATTLE TIMES</p>
+          </div>
         </div>
       </div>
     </responsive-child>
