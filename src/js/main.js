@@ -41,6 +41,5 @@ qsa(".goto").forEach(function(btn) {
 });
 
 document.querySelector(".start").addEventListener("click", function(e) {
-	console.log("starting")
 	$(".buttons").addClass("shown");
 });
