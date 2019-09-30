@@ -12,9 +12,10 @@ var qsa = s => Array.prototype.slice.call(document.querySelectorAll(s));
 
 qsa(".st0").forEach(function(group) {
   group.addEventListener("click", function(e) {
+  	$(".buttons").addClass("shown");
     document.querySelector(".details").innerHTML = template(data[e.target.id]);
     if (document.querySelector(".selected")) document.querySelector(".selected").classList.remove("selected");
-    e.target.parentElement.classList.add("selected");
+    e.target.classList.add("selected");
   });
 });
 
