@@ -5,7 +5,7 @@
       "path": "jittery-voice"
     },
     "live": {
-      "bucket": "",
+      "bucket": "projects.seattletimes.com",
       "path": ""
     }
   },
