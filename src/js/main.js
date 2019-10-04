@@ -12,6 +12,7 @@ var qsa = s => Array.prototype.slice.call(document.querySelectorAll(s));
 
 qsa(".st0").forEach(function(group) {
   group.addEventListener("click", function(e) {
+  	$(".buttons").addClass("shown");
     document.querySelector(".details").innerHTML = template(data[e.target.classList[1]]);
     if (document.querySelector(".selected")) 
     	document.querySelector(".selected").classList.remove("selected");
@@ -46,8 +47,8 @@ qsa(".goto").forEach(function(btn) {
 });
 
 document.querySelector(".start").addEventListener("click", function(e) {
-	$(".buttons").addClass("shown");
 	qsa(".personal").forEach(function(bubble) {
 		bubble.classList.add("selected")
 	})
+	$(".buttons").addClass("shown");
 });
