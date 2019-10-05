@@ -218,6 +218,12 @@ a {
 }
 .goto {
   .flex(1);
+  &.back {
+    margin-right: 10px;
+  }
+}
+
+.nav-button {
   border: 1px solid @df-middle-gray;
   border-radius: 10px;
   cursor: pointer;
@@ -225,29 +231,29 @@ a {
   font-weight: bold;
   padding: 4px 0;
   text-align: center;
-  &.start {
-    display: inline-block;
-    width: 130px;
-    margin-left: 10px;
-    @media @tablet {
-      display: block;
-      margin: auto;
-    }
-  }
-  &.disabled {
-    border-color: @df-light-gray;
-    color: @df-light-gray;
-    i {
-      color: #e0bcb8;
-    }
-  }
-  &.back {
-    margin-right: 10px;
-  }
 }
-.goto:not(.disabled):hover {
+
+.nav-button:not(.disabled):hover {
   background-color: black;
   color: white;
+}
+
+.start {
+  display: inline-block;
+  width: 130px;
+  margin-left: 10px;
+  @media @tablet {
+    display: block;
+    margin: auto;
+  }
+}
+
+.disabled {
+  border-color: @df-light-gray;
+  color: @df-light-gray;
+  i {
+    color: #e0bcb8;
+  }
 }
 
 .credits {
