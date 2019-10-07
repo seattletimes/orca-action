@@ -6,16 +6,16 @@
     },
     "live": {
       "bucket": "projects.seattletimes.com",
-      "path": ""
+      "path": "2019/environment/leader-ideas-to-save-orcas"
     }
   },
-  "title": "",
+  "title": "What can we do to save the southern resident orcas? Seattle-area leaders share their ideas",
   "description": "",
-  "url": "",
+  "url": "https://projects.seattletimes.com/2019/environment/leader-ideas-to-save-orcas",
   "slug": "orca-action",
   "tags": [],
   "image": "assets/social.jpg",
-  "production": false,
+  "production": true,
   "embedded": true,
   "sheets": ["11iISh-iC03yTFa2RVE9rwnQ81XpmVGJ9VUz7zFIvtqM"]
 }
