@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 	qsa(".goto").forEach(function(btn) {
 		btn.addEventListener("click", function(e) {
-			var selected = $("*[data-selected='true']")[0];
+			var selected = $("[data-selected='true']")[0];
 			var selectedIndex = selected ? options.indexOf(selected.dataset.key) : -1;
 
 			if (e.target.classList.contains("back")) {
@@ -64,20 +64,20 @@ $(document).ready(function() {
 	    		bubble.classList.remove("selected")
 	    	});
 	    }
-    	$("*[data-key=" + new_key + "]").addClass("selected");
+    	$("[data-key=" + new_key + "]").addClass("selected");
 
     	// "selected" data attribute for functionality; supports IE 11
 	    document.querySelectorAll(".st0").forEach(function(bubble) {
 	    	bubble.dataset.selected = "false";
 	    });
-			$("*[data-key=" + new_key + "]").each(function() {
+			$("[data-key=" + new_key + "]").each(function() {
 				this.dataset.selected = "true";
 			})
 		});
 	});
 
 	document.querySelector(".start").addEventListener("click", function(e) {
-		$("*[data-key='personal']").each(function() {
+		$("[data-key='personal']").each(function() {
 			this.classList.add("selected");
 			this.dataset.selected = "true";
 		})
