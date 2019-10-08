@@ -6,35 +6,23 @@ var template = dot.compile(require("./_info.html"));
 
 var qsa = s => Array.prototype.slice.call(document.querySelectorAll(s));
 
-var addClass = function(elm, cssClass) {
-	if (!!elm.classList) {
-		elm.classList.add(cssClass);
-	} else if (elm.nodeName === "SVG") {
-		let appliedClasses = elm.getAttribute("class") || "";
-		appliedClasses = !appliedClasses.split(" ").includes(cssClass)
-			? `${elm.className} ${cssClass}`
-			: appliedClasses;
-      	elm.setAttribute('class', appliedClasses);
-	}
-};
-
 $(document).ready(function() {
 	qsa(".st0").forEach(function(bubble) {
 	  bubble.addEventListener("click", function(e) {
 	  	$(".buttons").addClass("shown");
-	    document.querySelector(".details").innerHTML = template(data[e.target.dataset.key]);
+	    document.querySelector(".details").innerHTML = template(data[e.target.getAttribute("data-key")]);
 	    
 	    // "selected" class makes bubble gray while selected
 	    if (document.querySelector(".selected")) {
-	    	document.querySelector(".selected").classList.remove("selected");
+	    	$(".selected").removeClass("selected");
 	    }
-	    e.target.classList.add("selected");
+	    $(e.target).addClass("selected");
 
-	    // "selected" data attribute for functionality; supports IE 11
-	    document.querySelectorAll(".st0").forEach(function(bubble) {
-	    	bubble.dataset.selected = "false";
+	    // "selected" data attribute for functionality
+	    qsa(".st0").forEach(function(bubble) {
+	    	bubble.setAttribute("data-selected", "false");
 	    });
-	    e.target.dataset.selected = "true";
+	    e.target.setAttribute("data-selected", "true");
 	  });
 	});
 
@@ -43,7 +31,7 @@ $(document).ready(function() {
 	qsa(".goto").forEach(function(btn) {
 		btn.addEventListener("click", function(e) {
 			var selected = $("[data-selected='true']")[0];
-			var selectedIndex = selected ? options.indexOf(selected.dataset.key) : -1;
+			var selectedIndex = selected ? options.indexOf(selected.getAttribute("data-key")) : -1;
 
 			if (e.target.classList.contains("back")) {
 				selectedIndex = Math.max(0, selectedIndex - 1);
@@ -61,25 +49,25 @@ $(document).ready(function() {
 			// "selected" class to make bubble gray while selected
 	    if (document.querySelector(".selected")) {
 	    	qsa(".selected").forEach(function(bubble) {
-	    		bubble.classList.remove("selected")
+	    		$(bubble).removeClass("selected")
 	    	});
 	    }
     	$("[data-key=" + new_key + "]").addClass("selected");
 
-    	// "selected" data attribute for functionality; supports IE 11
-	    document.querySelectorAll(".st0").forEach(function(bubble) {
-	    	bubble.dataset.selected = "false";
+    	// "selected" data attribute for functionality
+	    qsa(".st0").forEach(function(bubble) {
+	    	bubble.setAttribute("data-selected", "false");
 	    });
 			$("[data-key=" + new_key + "]").each(function() {
-				this.dataset.selected = "true";
+				this.setAttribute("data-selected", "true");
 			})
 		});
 	});
 
 	document.querySelector(".start").addEventListener("click", function(e) {
 		$("[data-key='personal']").each(function() {
-			this.classList.add("selected");
-			this.dataset.selected = "true";
+			$(this).addClass("selected");
+			this.setAttribute("data-selected", "true");
 		})
 		$(".buttons").addClass("shown");
 
